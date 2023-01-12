@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3807363 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1673427760391') format('woff2'),
+       url('iconfont.woff?t=1673427760391') format('woff'),
+       url('iconfont.ttf?t=1673427760391') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wo:before {
+  content: "\e600";
+}
+
+.icon-tongzhi:before {
+  content: "\e759";
+}
+
+.icon-shoucang1:before {
+  content: "\e666";
+}
+
+.icon-youxi:before {
+  content: "\e634";
+}
+
+.icon-24gl-playlistMusic4:before {
+  content: "\ea72";
+}
+
+.icon-icon-test:before {
+  content: "\e635";
+}
+
+.icon-icon-test1:before {
+  content: "\e638";
+}
+
+.icon-icon-test2:before {
+  content: "\e63c";
+}
+
+.icon-icon-test3:before {
+  content: "\e63e";
+}
+
+.icon-icon-test4:before {
+  content: "\e63f";
+}
+
+.icon-icon-test5:before {
+  content: "\e640";
+}
+
+.icon-icon-test6:before {
+  content: "\e64a";
+}
+
+.icon-icon-test7:before {
+  content: "\e650";
+}
+
+.icon-icon-test8:before {
+  content: "\e658";
+}
+
+.icon-gengduo:before {
+  content: "\e8af";
+}
+
+.icon-faxian:before {
+  content: "\e8b0";
+}
+
+.icon-huiyuan:before {
+  content: "\e8b1";
+}
+
+.icon-tishi:before {
+  content: "\e8ba";
+}
+
+.icon-zhibo:before {
+  content: "\e8c1";
+}
+
+.icon-shipin:before {
+  content: "\e609";
+}
+
+.icon-lishibofang:before {
+  content: "\e60a";
+}
+
+.icon-pinglun:before {
+  content: "\e60b";
+}
+
+.icon-huore:before {
+  content: "\ffc8";
+}
+
+.icon-zixun:before {
+  content: "\ffcb";
+}
+
+.icon-shouye-zhihui:before {
+  content: "\e608";
+}
+
+.icon-cry:before {
+  content: "\e66a";
+}
+
+.icon-tiaozhuan:before {
+  content: "\e603";
+}
+
+.icon-shoucang:before {
+  content: "\e605";
+}
+
+.icon-xiaoxi:before {
+  content: "\e606";
+}
+
+.icon-wode:before {
+  content: "\e607";
+}
+
+.icon-zhankai:before {
+  content: "\e604";
+}
+

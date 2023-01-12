@@ -1,0 +1,453 @@
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      max-width: 960px;
+      display: flex;
+      /*所有元素垂直对齐*/
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .bgc {
+      background-color: white;
+    }
+
+    /*头部*/
+    .headtop {
+      width: 960px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 50px;
+      background-color: gray;
+    }
+
+    .header {
+      /* width:960px; */
+      height: 30px;
+      margin-top: 2px;
+      background-color: orange;
+      display: flex;
+    }
+
+    .header .left {
+      width: 540px;
+      background-color: olive;
+      display: flex;
+    }
+
+    .header .left li {
+      width: 60px;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .left li ul {
+      position: absolute;
+      width: 60px;
+      z-index: 11;
+      display: none;
+    }
+
+    .left li ul li {
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: goldenrod;
+      border-bottom: 1px solid Black;
+    }
+
+    .header .center {
+      width: 200px;
+      background-color: olive;
+      position: relative;
+    }
+
+    .center label {
+      position: absolute;
+      top: 2px;
+      height: 26px;
+      display: flex;
+    }
+
+    .center input {
+      width: 170px;
+      height: 26px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      padding: 0 10px;
+    }
+
+    .center span {
+      margin-left: 5px;
+      line-height: 26px;
+    }
+
+    .header .right {
+      width: 165 px;
+      background-color: olive;
+      display: flex;
+    }
+
+    .right li {
+      width: 55px;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      border-right: 1px solid gray;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .right li ul {
+      position: absolute;
+      width: 55px;
+      display: none;
+    }
+
+    .right li ul li {
+      z-index: 11;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-bottom: 1px solid Black;
+      background-color: gold;
+      box-sizing: border-box;
+    }
+
+    .but {
+      width: 55px;
+      line-height: 30px;
+      text-align: center;
+      background-color: olive;
+    }
+
+    /*身体部分*/
+    .body {
+      margin-top: 5px;
+      width: 960px;
+      height: 400px;
+      background-color: gray;
+    }
+
+    .body .bodya {
+      width: 120px;
+      height: 400px;
+      line-height: 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .bodya .body-a {
+      width: 120px;
+      height: 70px;
+      background-color: orange;
+      position: relative;
+    }
+
+    .body-a p {
+      position: absolute;
+      top: 5px;
+      left: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background-color: white;
+    }
+
+    .body-a ul {
+      width: 120px;
+      height: 15px;
+      display: flex;
+      position: absolute;
+      bottom: 2px;
+    }
+
+    .body-a ul li {
+      flex: 1;
+      line-height: 15px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .body-a ul span {
+      font-size: 10px;
+      margin-top: -12px;
+    }
+
+    /* 页面竖向导航 */
+    .bodya-body {
+      height: 225px;
+    }
+
+    .bodya-body li {
+      height: 25px;
+      line-height: 25px;
+      text-align: left;
+    }
+
+    .bodya-body li span {
+      margin-left: 80px;
+    }
+
+    .bodya .bodya-foot ul {
+      position: absolute;
+      bottom: 1px;
+      height: 30px;
+      display: flex;
+    }
+
+    .bodya-foot ul li {
+      font-size: 12px;
+      width: 40px;
+      line-height: 30px;
+    }
+
+    .content div {
+      position: absolute;
+      top: 97px;
+      left: 130px;
+      width: 840px;
+      height: 400px;
+      background-color: purple;
+    }
+
+    .content div:nth-child(1) {
+      z-index: 10;
+    }
+
+    .content div img {
+      width: 840px;
+      height: 400px;
+    }
+
+    /* 登录页面 */
+    .sign:before {
+      position: absolute;
+      top: -10px;
+      right: 25px;
+      display: block;
+      z-index: 11px;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-top: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid goldenrod;
+    }
+
+    .sign {
+      display: none;
+      position: fixed;
+      top: 97px;
+      right: 11px;
+      width: 180px;
+      height: 90px;
+      background-color: white;
+      padding: 2px 5px;
+      z-index: 12;
+    }
+
+    .square {
+      width: 4px;
+      height: 5px;
+      font-size: 8px;
+      text-align: right;
+      position: fixed;
+      right: 20px;
+    }
+
+    .sign .account {
+      margin-top: 10px;
+    }
+
+    .sign .pwd {
+      margin-top: 5px;
+    }
+
+    .account,
+    .pwd {
+      width: 180px;
+      height: 20px;
+      font-size: 14px;
+      display: flex;
+      border-bottom: 1px solid black;
+    }
+
+    .pwd img {
+      position: absolute;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+      background-color: gray;
+    }
+
+    .account input,
+    .pwd input {
+      flex: 1;
+      height: 20px;
+      padding: 0 2px;
+      border: none;
+      outline: none;
+      background-color: ghostwhite;
+    }
+
+    .sign .click {
+      width: 120px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      margin: 2px auto;
+      background-color: deepskyblue;
+    }
+
+    .sign .sign-foot {
+      width: 180px;
+      height: 10px;
+      font-size: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .sign-foot {
+      line-height: 10px;
+      text-align: center;
+    }
+
+    .sign-foot span {
+      font-size: 8px;
+    }
+
+    .bodycenter {
+      margin-top: 5px;
+      width: 960px;
+      height: 500px;
+      background-color: darkgray;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bodycenter img {
+      width:960px;
+      height:500px;
+    }
+
+    .bodycenter ul {
+      width: 500%;
+      height: 500px;
+      position:absolute;
+      left: 0;
+      top:0;
+      display: flex;
+    }
+    .bodycenter .leftbut,.rightbut{
+      display: none;
+      width:30px;
+      line-height: 60px;
+      text-align: center;
+      height: 60px;
+      background-color: gray;
+      z-index: 10;
+    }
+    .leftbut{
+      position:absolute;
+      top:46%;
+      left:0;
+    }
+    .rightbut{
+      position:absolute;
+      top:46%;
+      right:0;
+    }
+    .circle ol{
+      position: absolute;
+      bottom: 2px;
+      left:49%;
+      display: flex;
+    }
+    .circle ol li{
+      width: 15px;
+      height: 15px;
+      margin:0 5px ;
+      border-radius: 100%;
+      background-color: white;
+    }
+    .color{
+      background-color: Black;
+    }
+    .wex{
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      width: 180px;
+      height: 180px;
+      background-color: red;
+      z-index: 999;
+      display:none;
+    }
+    .wex img{
+      width:180px;
+      height: 180px;
+    }
+    .QQ{
+      position: absolute;
+      right:40px;
+      top:50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: deepskyblue;
+      opacity:0.5;
+      font-size: 12px;
+      animation:myqq 3s infinite;
+    }
+    @keyframes myqq
+    {
+      0%{transform:scale(0)}
+      50%{transform:scale(2)}
+      100%{transform:scale(1.3)}
+    }
+    .last{
+      position:relative;
+    }
+    .rabbit img{
+      padding-top: 5px;
+      width:960px;
+      height: 400px;
+    }
+    .djs{
+      position: absolute;
+      top:55%;
+      left: 300px;
+      width:360px;
+      height: 90px;
+      line-height: 90px;
+      font-size: 35px;
+      opacity:0.4;
+      background-color: orange;
+      z-index: 3;
+      display:flex;
+    }
+    .dgs span {
+      line-height: 90px;
+      font-size: 35px;
+    }
+    .chuxi{
+      flex: 1;
+      font-size: 30px;
+    }
